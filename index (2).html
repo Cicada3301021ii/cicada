@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+  /* Style the button */
+  .myButton {
+    padding: 10px 20px;
+    background-color: green;
+    color: white;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    top: 50px;
+    left: 50px;
+  }
+p {
+ font-size : 18px;
+ font-weight : bold;
+};
+</style>
+<script>
+  function moveButton() {
+    var button = document.getElementById('myButton');
+    var newPosition = {
+      top: Math.floor(Math.random() * window.innerHeight),
+      left: Math.floor(Math.random() * window.innerWidth)
+    };
+    
+    button.style.top = newPosition.top + 'px';
+    button.style.left = newPosition.left + 'px';
+  }
+        console.log('%c%s', 'color:#FFC0CB;', "37.2405° N, 115.8144° W");
+</script>
+</head>
+<body>
+<p>https://cicada3301.github.com/__________</p>
+<button id="myButton" class="myButton" onclick="moveButton()">Search</button>
+
+</body>
+</html>
